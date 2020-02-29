@@ -5,8 +5,8 @@ public class SnakeLadder {
 	public static void main(String[] args) {
 		System.out.println("Welcome to Snake Ladder Simulator");
 		int position=0;
-		int player;
 		int dice;
+		int player=0;
 		int choice;
 		int WIN_POSITION=100;
 		int START_POSITION=0;
@@ -18,11 +18,13 @@ public class SnakeLadder {
 		{
 		case 1: System.out.println("No play");
 			   	position=position;
+			   	System.out.println(position);
 			   	break;
 		case 2: System.out.println("Ladder");
 				if((position+dice)< WIN_POSITION)
 				{
 				position=position+dice;
+				System.out.println(position);
 				}
 				break;
 		case 3:System.out.println("Snake");
@@ -34,11 +36,14 @@ public class SnakeLadder {
 				{
 				position=position-dice;
 				}
+				System.out.println(START_POSITION);
 				break;
 		
 		}
-		System.out.println(position);
+		
+	
+		}
 	}
-}
+
 
 
